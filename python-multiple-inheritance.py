@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# ** Swift, Java, Fortran since its 2003 revision, c# and Ruby implement single inheritance
+
 # In[3]:
 
 
@@ -29,7 +31,7 @@ class C(A, B):
 C().foo()  # Run this
 
 
-# In[5]:
+# In[7]:
 
 
 class FooBase(object):
@@ -63,7 +65,7 @@ class B(FooBase):
 class C(A, B):
     name = "C"
     def foo(self):
-        print( 'C.foo() begins')
+        print ('C.foo() begins')
         print("My name is: %s" % self.name)
         print("My super's name is: %s" % super(C, self).name)
         print(" C.__mro__ is %s" % str(C.__mro__))
